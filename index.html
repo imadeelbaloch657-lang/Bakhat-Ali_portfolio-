@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Bakhat Ali – Pharm D student portfolio: education, skills, resources, and contact." />
+  <meta name="theme-color" content="#10b981" />
+  <title>Bakhat Ali — Pharm D Portfolio</title>
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'Segoe UI', 'Roboto', 'Arial'] },
+          colors: {
+            brand: { DEFAULT: '#10b981', dark: '#059669', light: '#34d399' },
+            ink: '#0f172a',
+          },
+          boxShadow: { soft: '0 12px 40px rgba(16,185,129,.22)' },
+          keyframes: {
+            'fade-up': { '0%':{opacity:0,transform:'translateY(12px)'}, '100%':{opacity:1,transform:'translateY(0)'} },
+            'fade-in': { '0%':{opacity:0}, '100%':{opacity:1} },
+          },
+          animation: { 'fade-up':'fade-up .7s ease forwards', 'fade-in':'fade-in .6s ease forwards' }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+
+  <!-- Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f5a2a1c9c.js" crossorigin="anonymous"></script>
+
+  <style>
+    .hero-bg{background:
+      radial-gradient(900px 400px at 10% -10%, rgba(16,185,129,.25), transparent),
+      radial-gradient(700px 300px at 90% 0%, rgba(52,211,153,.22), transparent),
+      linear-gradient(180deg, #ffffff, #f8fafc);
+    }
+    .dark .hero-bg{background:
+      radial-gradient(900px 400px at 10% -10%, rgba(16,185,129,.28), transparent),
+      radial-gradient(700px 300px at 90% 0%, rgba(52,211,153,.24), transparent),
+      linear-gradient(180deg, #0b1220, #020617);
+    }
+    .glass{backdrop-filter:blur(10px);background:rgba(255,255,255,.7)}
+    .dark .glass{background:rgba(15,23,42,.6)}
+  </style>
+</head>
+<body class="antialiased text-ink/90 dark:text-slate-100 bg-white dark:bg-slate-950">
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/60 dark:border-slate-800/60 bg-white/80 dark:bg-slate-900/70 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-wide text-brand">Bakhat&nbsp;Ali</a>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-700" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="nav" class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-brand">About</a>
+        <a href="#education" class="hover:text-brand">Education</a>
+        <a href="#experience" class="hover:text-brand">Experience</a>
+        <a href="#skills" class="hover:text-brand">Skills</a>
+        <a href="#languages" class="hover:text-brand">Languages</a>
+        <a href="#resources" class="hover:text-brand">Resources</a>
+        <a href="#contact" class="hover:text-brand">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-2">
+        <a href="assets/Bakhat_Ali_CV_With_Photo.pdf" class="px-3 py-2 rounded-xl bg-brand hover:bg-brand-dark text-white text-sm shadow-soft">Download CV</a>
+        <button id="themeToggle" aria-label="Toggle dark mode" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800">
+          <i class="fa-solid fa-moon dark:hidden"></i>
+          <i class="fa-solid fa-sun hidden dark:inline"></i>
+        </button>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div id="mobileNav" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap gap-4 text-sm">
+        <a href="#about" class="block w-full">About</a>
+        <a href="#education" class="block w-full">Education</a>
+        <a href="#experience" class="block w-full">Experience</a>
+        <a href="#skills" class="block w-full">Skills</a>
+        <a href="#languages" class="block w-full">Languages</a>
+        <a href="#resources" class="block w-full">Resources</a>
+        <a href="#contact" class="block w-full">Contact</a>
+        <a href="assets/Bakhat_Ali_CV_With_Photo.pdf" class="block w-full font-medium text-brand">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero-bg">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div class="order-2 md:order-1 animate-fade-up opacity-0">
+        <h1 class="text-3xl sm:text-5xl font-semibold leading-tight">Bakhat Ali
+          <span class="block mt-2 text-brand">Pharm D (UHS Lahore) — Student</span>
+        </h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-xl">
+          Belonging to the rich <b>Saraiki culture</b> of Punjab; passionate about healthcare, safe medication practices, and continuous learning.
+          Mother tongue: <b>Saraiki</b>. National language: <b>Urdu</b>. International language: <b>English</b>.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="assets/Bakhat_Ali_CV_With_Photo.pdf" class="px-4 py-2 rounded-xl bg-brand hover:bg-brand-dark text-white shadow-soft">Download CV</a>
+          <a href="#contact" class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+        </div>
+      </div>
+      <div class="order-1 md:order-2 flex justify-center animate-fade-up opacity-0" style="animation-delay:.15s">
+        <div class="relative">
+          <img id="profileImg" src="assets/profile.jpg" alt="Bakhat Ali" class="w-48 h-56 sm:w-60 sm:h-72 object-cover rounded-2xl ring-4 ring-white/70 dark:ring-slate-800 shadow-xl" />
+          <div class="absolute -z-10 -inset-4 blur-3xl bg-brand/20 rounded-3xl"></div>
+          <!-- Replace/Preview photo locally -->
+          <label for="photoInput" class="mt-3 inline-flex items-center gap-2 cursor-pointer text-xs px-3 py-2 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 absolute -bottom-10 left-1/2 -translate-x-1/2">
+            <i class="fa-solid fa-camera"></i> Change Photo (preview)
+          </label>
+          <input id="photoInput" type="file" accept="image/*" class="hidden" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-2 p-6 rounded-2xl glass shadow-soft animate-fade-up opacity-0">
+          <h2 class="text-xl font-semibold mb-3">About Me</h2>
+          <p class="text-slate-600 dark:text-slate-300">I’m <b>Bakhat Ali</b> (Mehr Arain), Pharm D student at the <b>University of Health Sciences, Lahore</b>. I completed basic and matric education from <b>Al‑Ghazali Public School, Dunyapur</b> and FSc (Pre‑Medical) from <b>Ali Ghar College, Kahror Pakka</b>. I’m committed to patient care, accurate dispensing, and pharmacy best practices.</p>
+        </div>
+        <div class="p-6 rounded-2xl glass shadow-soft animate-fade-up opacity-0" style="animation-delay:.1s">
+          <h3 class="font-semibold mb-2">Quick Info</h3>
+          <ul class="space-y-1 text-sm">
+            <li><b>Father’s Name:</b> Allah Diwaya</li>
+            <li><b>Caste:</b> Mehr Arain</li>
+            <li><b>City:</b> Dunyapur</li>
+            <li><b>Province:</b> Punjab, Pakistan</li>
+            <li><b>Email:</b> <a class="text-brand" href="mailto:bakhtali62@gmail.com">bakhtali62@gmail.com</a></li>
+            <li><b>Phone:</b> <a class="text-brand" href="tel:+923260634755">+92 326 0634755</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 bg-slate-50 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold mb-8">Education</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 shadow-soft animate-fade-up opacity-0">
+          <h3 class="font-semibold">Doctor of Pharmacy (Pharm D)</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">University of Health Sciences (UHS), Lahore — <i>Ongoing</i></p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 shadow-soft animate-fade-up opacity-0" style="animation-delay:.05s">
+          <h3 class="font-semibold">FSc (Pre‑Medical)</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">Ali Ghar College, Kahror Pakka</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 shadow-soft animate-fade-up opacity-0" style="animation-delay:.1s">
+          <h3 class="font-semibold">Matriculation</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">Al‑Ghazali Public School, Dunyapur</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 shadow-soft animate-fade-up opacity-0" style="animation-delay:.15s">
+          <h3 class="font-semibold">Basic Education</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300">Al‑Ghazali Public School, Dunyapur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold mb-8">Experience</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="p-6 rounded-2xl glass shadow-soft animate-fade-up opacity-0">
+          <h3 class="font-semibold">Community / Retail Pharmacy</h3>
+          <ul class="mt-2 list-disc list-inside text-slate-600 dark:text-slate-300 space-y-1 text-sm">
+            <li>Dispensing medicines & verifying prescriptions</li>
+            <li>Patient counselling and dosage guidance</li>
+            <li>Awareness of pharmacovigilance & drug safety</li>
+            <li>Teamwork in a fast‑paced retail environment</li>
+          </ul>
+        </article>
+        <article class="p-6 rounded-2xl glass shadow-soft animate-fade-up opacity-0" style="animation-delay:.05s">
+          <h3 class="font-semibold">Core Competencies</h3>
+          <ul class="mt-2 grid grid-cols-2 gap-2 text-sm">
+            <li class="px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800">Prescription Handling</li>
+            <li class="px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800">Patient Counselling</li>
+            <li class="px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800">Inventory Basics</li>
+            <li class="px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800">Communication</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-slate-50 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold mb-8">Skills</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 animate-fade-up opacity-0">Pharmaceutical Knowledge</div>
+        <div class="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 animate-fade-up opacity-0" style="animation-delay:.03s">Medicine Dispensing</div>
+        <div class="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 animate-fade-up opacity-0" style="animation-delay:.06s">Prescription Handling</div>
+        <div class="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 animate-fade-up opacity-0" style="animation-delay:.09s">Patient Counselling</div>
+        <div class="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 animate-fade-up opacity-0" style="animation-delay:.12s">MS Office & Basic IT</div>
+        <div class="p-4 rounded-2xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 animate-fade-up opacity-0" style="animation-delay:.15s">Time Management</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold mb-6">Languages</h2>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="p-5 rounded-2xl glass shadow-soft animate-fade-up opacity-0"><b>Saraiki</b><div class="text-sm text-slate-600 dark:text-slate-300">Mother tongue</div></div>
+        <div class="p-5 rounded-2xl glass shadow-soft animate-fade-up opacity-0" style="animation-delay:.05s"><b>Urdu</b><div class="text-sm text-slate-600 dark:text-slate-300">National language</div></div>
+        <div class="p-5 rounded-2xl glass shadow-soft animate-fade-up opacity-0" style="animation-delay:.1s"><b>English</b><div class="text-sm text-slate-600 dark:text-slate-300">International language</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources / Notes -->
+  <section id="resources" class="py-16 bg-slate-50 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl font-semibold mb-4">Books & Study Notes</h2>
+      <p class="text-slate-600 dark:text-slate-300 mb-6">Access shared academic resources, books and notes:</p>
+      <a href="https://drive.google.com/drive/folders/1uwYiN2zLqg18tAyLaloRgiJUNuYv3kZS?usp=sharing" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-brand hover:bg-brand-dark text-white shadow-soft">
+        <i class="fa-solid fa-book"></i> Open Google Drive Folder
+      </a>
+    </div>
+  </section>
+
+  <!-- Socials & Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-3 gap-8 items-start">
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-semibold mb-3">Get in Touch</h2>
+        <p class="text-slate-600 dark:text-slate-300 mb-6">Open to internships, part‑time roles, and collaborations.</p>
+        <div class="space-y-2 text-sm mb-6">
+          <p><b>Email:</b> <a class="text-brand" href="mailto:bakhtali62@gmail.com">bakhtali62@gmail.com</a></p>
+          <p><b>Phone/WhatsApp:</b> <a class="text-brand" href="tel:+923260634755">+92 326 0634755</a></p>
+          <p><b>City:</b> Dunyapur, Punjab</p>
+        </div>
+        <form class="p-6 rounded-2xl glass shadow-soft" onsubmit="event.preventDefault(); alert('Thanks! This is a static demo on GitHub Pages. Use mailto or form services (e.g., Formspree) to send messages.');">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input class="px-3 py-2 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700" placeholder="Your name" required>
+            <input type="email" class="px-3 py-2 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700" placeholder="Email" required>
+            <input class="sm:col-span-2 px-3 py-2 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700" placeholder="Subject" required>
+            <textarea rows="4" class="sm:col-span-2 px-3 py-2 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700" placeholder="Message" required></textarea>
+          </div>
+          <button class="mt-4 w-full px-4 py-2 rounded-xl bg-brand hover:bg-brand-dark text-white shadow-soft">Send Message</button>
+        </form>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Social Profiles</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-1 gap-3">
+          <a class="inline-flex items-center gap-3 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" href="https://www.facebook.com/share/19RCdmis3W/"><i class="fa-brands fa-facebook text-brand"></i> Facebook</a>
+          <a class="inline-flex items-center gap-3 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" href="https://www.instagram.com/bakhtali9079?igsh=OHVjdTV0YnoxZ3Q2"><i class="fa-brands fa-instagram text-brand"></i> Instagram</a>
+          <a class="inline-flex items-center gap-3 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" href="https://wa.me/qr/7A6GZJK6X4BYE1"><i class="fa-brands fa-whatsapp text-brand"></i> WhatsApp</a>
+          <a class="inline-flex items-center gap-3 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" target="_blank" href="https://www.tiktok.com/@bakhtali12346?_t=ZS-8z8hIqctqTM&_r=1"><i class="fa-brands fa-tiktok text-brand"></i> TikTok</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm text-slate-500 border-t border-slate-200/60 dark:border-slate-800/60">
+    © <span id="year"></span> Bakhat Ali — Pharm D Student. All rights reserved.
+  </footer>
+
+  <script>
+    // theme toggle
+    const toggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) { root.classList.add('dark'); }
+    toggle?.addEventListener('click', () => { root.classList.toggle('dark'); localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light'); });
+
+    // mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+
+    // simple reveal on scroll
+    const revealEls = document.querySelectorAll('.animate-fade-up');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.remove('opacity-0'); } });
+    }, {threshold:.15});
+    revealEls.forEach(el=>io.observe(el));
+
+    // local preview for profile image (does not upload)
+    const photoInput = document.getElementById('photoInput');
+    const profileImg = document.getElementById('profileImg');
+    photoInput?.addEventListener('change', (e)=>{
+      const file = e.target.files?.[0];
+      if(!file) return;
+      const url = URL.createObjectURL(file);
+      profileImg.src = url; // preview only
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
